@@ -376,3 +376,38 @@ section.contato{
         }
     }
 }
+
+footer{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: #D22133;
+
+    & p{
+        font-family: Impact;
+        font-size: 35px;
+    }
+
+    & .redes-sociais{
+        width: 300px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .logo, .logo-linkedin{
+            width: 80px;
+            height: 60px;
+            margin: 0 10px;
+            cursor: pointer;
+
+            & i{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+    }
+}
