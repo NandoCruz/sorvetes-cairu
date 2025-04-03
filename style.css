@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Poppins;
+    background-color: rgba(210, 33, 51, .2);
+}
+
+header{
+    position: fixed;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+
+    p{
+        font-family: Impact;
+        font-size: 2em;
+        color: #D22133;
+
+        & span{
+            color: #e28102;
+        }
+    }
+
+    & nav{
+        width: 600px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & a{
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            text-decoration: none;
+            color: #D22133;
+            border-radius: 15px;
+        }
+
+        & a.active{
+            background-color: #D22133;
+            color: white;
+            border-radius: 15px;
+            font-weight: 600;
+        }
+
+        & a:hover{
+            background-color: #D22133;
+            color: white;
+            border-radius: 15px;
+            font-weight: 600;
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+section.home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    & .img{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -999;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            object-fit: cover;
+        }
+    }
+
+    & .container{
+        max-width: 50%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .container-description{
+            width: 80%;
+            height: 200px;
+
+            & h1{
+                font-family: Impact;
+                font-size: 5em;
+                letter-spacing: 3px;
+                margin-bottom: 10px;
+                color: #782A1A;
+            }
+
+            & .description{
+                font-size: 18px;
+            }
+        }
+
+        & .btn-cairu{
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & button{
+                width: 140px;
+                height: 50px;
+                border: none;
+                border-radius: 15px;
+                background-color: #D22133;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            & img{
+                width: 120px;
+            }
+        }
+    }
+
+    & .img-sorvete-acai{
+        width: 25%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+section.sobre{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    & .img-fundo{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -99;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .container{
+        max-width: 800px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .description{
+            width: 85%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+
+            & h1{
+                font-size: 3em;
+                color: #D22133;
+            }
+
+            & .description{
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+
+            & button{
+                width: 150px;
+                height: 80px;
+                background-color: #D22133;
+                color: white;
+                border: none;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    & .img-fernando{
+        width: 350px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+section.sorvetes{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .img-sobre{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -99;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        & h1{
+            font-family: Impact;
+            font-size: 5em;
+            color: #D22133;
+        }
+
+        & .slides{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            
+            & .slider{
+                width: 250px;
+                height: 100%;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                & img{
+                    width: 100%;
+                    border-radius: 15px;
+                    margin-bottom: 10px;
+                }
+
+                & button{
+                    width: 100%;
+                    height: 70px;
+                    border-radius: 15px;
+                    border: none;
+                    font-family: Impact;
+                    font-size: 30px;
+                    color: #D22133;
+                    background-color: rgba(255, 176, 71, .8);
+                }
+            }
+        }
+
+        & .img-logo{
+            width: 150px;
+            height: 100px;
+            margin-top: 30px;
+
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+section.contato{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h1{
+        font-family: Impact;
+        font-size: 4em;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        color: #D22133;
+    }
+
+    & .img-contato{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -99;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & form{
+        width: 35%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: rgba(250, 250, 250, .5);
+        padding: 30px;
+
+        & input {
+            height: 60px;
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            font-size: 18px;
+            margin: 5px;
+            background-color: rgba(250, 250, 250, .8);
+            color: #3a3a3a;
+        }
+
+        & textarea{
+            height: 100px;
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            font-size: 18px;
+            margin: 5px;
+            background-color: rgba(250, 250, 250, .8);
+            color: #000;
+        }
+
+        & .btn-enviar{
+            margin-top: 20px;
+            text-align: center;
+
+            & input{
+                width: 200px;
+                color: #fff;
+                font-weight: 700;
+                cursor: pointer;
+                transition: .2s;
+                background-color: #D22133;
+            }
+        }
+    }
+}
